@@ -1,0 +1,51 @@
+{
+  "name": "lantern-ui",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "imports": {
+    "#components/*": "./src/components/*.tsx",
+    "#lib/*": "./src/lib/*.ts"
+  },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5179 --strictPort",
+    "build": "tsc --noEmit && vite build",
+    "check": "tsc --noEmit",
+    "lint": "oxlint . --deny-warnings",
+    "format": "oxfmt --write .",
+    "format:check": "oxfmt --check .",
+    "test": "bun test"
+  },
+  "dependencies": {
+    "@base-ui/react": "^1.9.0",
+    "@codemirror/commands": "^6.8.1",
+    "@codemirror/lang-go": "^6.0.1",
+    "@codemirror/language": "^6.11.3",
+    "@codemirror/search": "^6.5.11",
+    "@codemirror/state": "^6.5.2",
+    "@codemirror/view": "^6.38.6",
+    "@fontsource-variable/geist-mono": "^5.2.7",
+    "@lezer/highlight": "^1.2.1",
+    "@phosphor-icons/react": "^2.1.10",
+    "@wailsio/runtime": "3.0.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-resizable-panels": "^4.0.0",
+    "tailwind-merge": "^3.5.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/bun": "latest",
+    "@types/node": "^25.6.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "oxfmt": "latest",
+    "oxlint": "latest",
+    "tailwindcss": "^4.3.3",
+    "typescript": "~6.0.2",
+    "vite": "^8.3.0"
+  }
+}

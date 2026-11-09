@@ -1,0 +1,40 @@
+:root {
+  color-scheme: light;
+  --background: light-dark(#f7f1e3, #090909);
+  --foreground: light-dark(#24251f, #f7f1e3);
+  --card: light-dark(#f7f1e3, #111111);
+  --card-foreground: var(--foreground);
+  --popover: light-dark(#fffaf0, #171717);
+  --popover-foreground: var(--foreground);
+  --primary: #ff5a1f;
+  --primary-hover: #ff713e;
+  --primary-foreground: #24251f;
+  --secondary: light-dark(#e6dece, #292929);
+  --secondary-foreground: var(--foreground);
+  --muted: light-dark(#ece4d4, #171717);
+  --muted-foreground: light-dark(#626159, #aaa99f);
+  --accent: light-dark(#f2dfcf, #382218);
+  --accent-foreground: var(--foreground);
+  --link: light-dark(#a3330b, #ff936e);
+  --destructive: light-dark(#a82e20, #ff9488);
+  --success: light-dark(#27613f, #87c99b);
+  --warning: light-dark(#795000, #efc16a);
+  --border: light-dark(#c9c3b7, #41413d);
+  --input: light-dark(#89867b, #77776f);
+  --ring: var(--link);
+  --overlay: light-dark(rgb(9 9 9 / 45%), rgb(0 0 0 / 65%));
+  --radius: 0.2rem;
+  --elevation-color: light-dark(rgb(36 37 31 / 10%), rgb(0 0 0 / 35%));
+  --elevation-edge: light-dark(rgb(36 37 31 / 8%), rgb(0 0 0 / 25%));
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-mode]) {
+    color-scheme: dark;
+  }
+}
+:root[data-mode="dark"] {
+  color-scheme: dark;
+}
+:root[data-mode="light"] {
+  color-scheme: light;
+}
