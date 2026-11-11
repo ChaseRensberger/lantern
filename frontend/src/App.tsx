@@ -259,7 +259,6 @@ export default function App() {
           <BugBeetle aria-hidden="true" size={20} />
           <h1>Lantern</h1>
         </div>
-        <span className="header-context">Debugger</span>
         <div className="ml-auto flex items-center gap-2">
           <Button
             variant="ghost"

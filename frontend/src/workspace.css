@@ -61,12 +61,6 @@ textarea {
   font-weight: 600;
   letter-spacing: -0.03em;
 }
-.header-context {
-  font-size: 12px;
-  color: var(--muted-foreground);
-  border-left: 1px solid var(--border);
-  padding-left: 16px;
-}
 .toolbar-divider {
   display: block;
   width: 1px;
@@ -473,13 +467,6 @@ textarea {
   flex-shrink: 0;
   border-top: 1px solid var(--border);
 }
-.inspector-note {
-  padding: 12px 16px;
-  border-top: 1px solid var(--border);
-  font-size: 12px;
-  line-height: 16px;
-  color: var(--muted-foreground);
-}
 .value-detail {
   max-height: 50dvh;
   overflow: auto;
@@ -641,9 +628,6 @@ textarea {
   .app-header {
     gap: 8px;
     padding: 8px;
-  }
-  .header-context {
-    display: none;
   }
   .saved-configs {
     width: 200px;

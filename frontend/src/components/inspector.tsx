@@ -432,9 +432,6 @@ export function Inspector({
           ))}
         </div>
       )}
-      <div className="inspector-note">
-        Only observed values are compared. Arrays and strings may be truncated by Delve.
-      </div>
       <Dialog
         open={!!detail}
         onOpenChange={(open) => {

@@ -19,6 +19,7 @@ import {
 } from "@phosphor-icons/react";
 import { Button } from "./core/button";
 import { Input } from "./core/input";
+import { Checkbox } from "./core/checkbox";
 import type { SourceViewHandle } from "./source-view";
 import { Dialog, DialogContent, DialogTitle, DialogDescription, DialogFooter } from "./core/dialog";
 import { Inspector } from "./inspector";
@@ -747,11 +748,7 @@ export function Workspace({
                     <div className="panel-heading">
                       <h2>Output</h2>
                       <label className="flex items-center gap-2 text-xs text-muted-foreground">
-                        <input
-                          type="checkbox"
-                          checked={followOutput}
-                          onChange={(e) => setFollowOutput(e.target.checked)}
-                        />
+                        <Checkbox checked={followOutput} onCheckedChange={setFollowOutput} />
                         Follow
                       </label>
                     </div>
